@@ -1,0 +1,11 @@
+<template name="viewQuotes">
+    <h2>View all quotes.</h2>
+    {{# each quotes }}
+        <h3>{{ quote }}</h3>
+        <ul>
+        {{# each tags }}
+        <li>{{ this }}</li>
+        {{/ each }}
+        </ul>
+    {{/ each }}
+</template>
